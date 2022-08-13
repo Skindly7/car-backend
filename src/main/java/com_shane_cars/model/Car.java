@@ -23,7 +23,7 @@ public class Car {
 
     private String transmission;
 
-    private int year;
+    private int releaseYear;
 
     private String gen;
 
@@ -41,7 +41,7 @@ public class Car {
     }
 
     public Car(Integer id, String make, String model, String engineSize, String bodyType, String fuelType,
-               Integer numberOfDoors, String transmission, int year, String gen, int topSpeed,
+               Integer numberOfDoors, String transmission, int releaseYear, String gen, int topSpeed,
                double zeroToSixty, int horsePower, double mpg) {
         this.id = id;
         this.make = make;
@@ -51,7 +51,7 @@ public class Car {
         this.fuelType = fuelType;
         this.numberOfDoors = numberOfDoors;
         this.transmission = transmission;
-        this.year = year;
+        this.releaseYear = releaseYear;
         this.gen = gen;
         this.topSpeed = topSpeed;
         this.zeroToSixty = zeroToSixty;
@@ -123,12 +123,12 @@ public class Car {
         this.transmission = transmission;
     }
 
-    public int getYear() {
-        return year;
+    public int getReleaseYear() {
+        return releaseYear;
     }
 
-    public void setYear(int year) {
-        this.year = year;
+    public void setReleaseYear(int year) {
+        this.releaseYear = year;
     }
 
     public String getGen() {
