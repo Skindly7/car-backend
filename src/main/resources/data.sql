@@ -3,5 +3,6 @@ insert into Car (ID, MAKE, MODEL, ENGINE_SIZE, BODY_TYPE, FUEL_TYPE,
                  ZERO_TO_SIXTY, HORSE_POWER, MPG) values
 (1001, 'Mazda', 'MX-5', '1.6L', 'Convertible', 'Petrol', 3, 'Manual', 1996, 'MK1', 120, 7.7, 110, 34.0),
 (1002, 'Honda', 'S2000', '2.0L', 'Convertible', 'Diesel', 3, 'Automatic', '2004', 'AP2', 148, 6.9, 155, 32.7),
-(1003, 'Toyota', 'MR2', '1.8L', 'Coupe', 'Petrol', 3, 'Manual', 1988, 'MK1', 115, 8.3, 138, 33.5)
+(1003, 'Toyota', 'MR2', '1.8L', 'Coupe', 'Petrol', 3, 'Manual', 1988, 'MK1', 115, 8.3, 138, 33.5),
+(1004, 'Ford', 'Fiesta', '1.25L', 'Hatchback', 'Petrol', 5, 'Manual', 2011, 'MK6', 112, 10.1, 74, 37.0)
 ;
