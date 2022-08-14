@@ -16,16 +16,5 @@ public class HomeResource {
     @Autowired
     private CarService carService;
 
-    @GetMapping("/cars")
-    public String getHomePageData(){
 
-        JSONArray carData = new JSONArray(carService.getAllCars());
-        return carData.toString();
-    }
-
-    @GetMapping("/cars/{carID}")
-    public Optional<Car> getcarDetailsData(@PathVariable int carID){
-        Optional<Car> carData = carService.getCarDetails(carID);
-        return carData;
-    }
 }

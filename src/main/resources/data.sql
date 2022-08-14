@@ -6,3 +6,4 @@ insert into Car (ID, MAKE, MODEL, ENGINE_SIZE, BODY_TYPE, FUEL_TYPE,
 (1003, 'Toyota', 'MR2', '1.8L', 'Coupe', 'Petrol', 3, 'Manual', 1988, 'MK1', 115, 8.3, 138, 33.5),
 (1004, 'Ford', 'Fiesta', '1.25L', 'Hatchback', 'Petrol', 5, 'Manual', 2011, 'MK6', 112, 10.1, 74, 37.0)
 ;
+
