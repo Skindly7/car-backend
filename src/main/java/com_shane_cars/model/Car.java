@@ -1,5 +1,6 @@
 package com_shane_cars.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -9,6 +10,7 @@ import javax.persistence.*;
 @Getter
 @Setter
 @NoArgsConstructor
+@AllArgsConstructor
 @Entity
 public class Car {
 
@@ -20,19 +22,15 @@ public class Car {
 
     private String model;
 
-    private String engineSize;
+    private String gen;
+
+    private String releaseYearRange;
 
     private String bodyType;
 
-    private String fuelType;
+    private int numberOfDoors;
 
-    private Integer numberOfDoors;
-
-    private String transmission;
-
-    private int releaseYear;
-
-    private String gen;
+    private String countryOfOrigin;
 
     private int topSpeed;
 
@@ -42,23 +40,5 @@ public class Car {
 
     private double mpg;
 
-    public Car(Integer id, String make, String model, String engineSize, String bodyType, String fuelType,
-               Integer numberOfDoors, String transmission, int releaseYear, String gen, int topSpeed,
-               double zeroToSixty, int horsePower, double mpg) {
-        this.id = id;
-        this.make = make;
-        this.model = model;
-        this.engineSize = engineSize;
-        this.bodyType = bodyType;
-        this.fuelType = fuelType;
-        this.numberOfDoors = numberOfDoors;
-        this.transmission = transmission;
-        this.releaseYear = releaseYear;
-        this.gen = gen;
-        this.topSpeed = topSpeed;
-        this.zeroToSixty = zeroToSixty;
-        this.horsePower = horsePower;
-        this.mpg = mpg;
-    }
 
 }

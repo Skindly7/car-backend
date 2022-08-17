@@ -1,51 +1,12 @@
-insert into Car (ID, MAKE, MODEL, ENGINE_SIZE, BODY_TYPE, FUEL_TYPE,
-                 NUMBER_OF_DOORS, TRANSMISSION, RELEASE_YEAR, GEN, TOP_SPEED,
-                 ZERO_TO_SIXTY, HORSE_POWER, MPG) values
-(1001, 'Mazda', 'MX-5', '1.6L', 'Convertible', 'Petrol', 3, 'Manual', 1996, 'MK1', 120, 7.7, 110, 34.0),
-(1002, 'Honda', 'S2000', '2.0L', 'Convertible', 'Diesel', 3, 'Automatic', '2004', 'AP2', 148, 6.9, 155, 32.7),
-(1003, 'Toyota', 'MR2', '1.8L', 'Coupe', 'Petrol', 3, 'Manual', 1988, 'MK1', 115, 8.3, 138, 33.5),
-(1004, 'Ford', 'Fiesta', '1.25L', 'Hatchback', 'Petrol', 5, 'Manual', 2011, 'MK6', 112, 10.1, 74, 37.0)
+insert into Car (ID, MAKE, MODEL, GEN, BODY_TYPE, NUMBER_OF_DOORS, RELEASE_YEAR_RANGE, COUNTRY_OF_ORIGIN,
+                 TOP_SPEED, ZERO_TO_SIXTY, HORSE_POWER, MPG) values
+(1001, 'Mazda', 'MX-5', 'MK1', 'Convertible', 3, '1991-1998', 'Japan', 120, 7.7, 110, 34.0),
+(1002, 'Honda', 'S2000', 'AP2', 'Convertible', 3,'2003-2009', 'Japan', 148, 6.9, 155, 32.7),
+(1003, 'Toyota', 'MR2', 'MK1', 'Coupe', 3, '1984-1988', 'Japan', 115, 8.3, 138, 33.5),
+(1004, 'Ford', 'Fiesta', 'MK5', 'Hatchback', 5,  '2002-2008', 'USA', 112, 10.1, 74, 37.0)
 ;
 
-insert into Car_Stock (ID, CAR_ID, COLOUR, MILEAGE, PRICE, DESCRIPTION) values
-(200, 1003, 'Red', 74346, 7499.00, 'Great Condition - Kept in a garage'),
-(201, 1003, 'White', 51908, 9999.00, 'Well looked after!'),
-(202, 1002, 'Yellow', 88467, 14999.00, 'Runs like its brand new'),
-(203, 1001, 'Red', 97510, 4700.00, 'Excellent condition considering the mileage'),
-(204, 1004, 'Blue', 46456, 3250.00, 'Really good first car, cheap and reliable, full service history included'),
-(205, 1001, 'Green', 102201, 21121.00, 'DEFAULT DESCRIPTION'),
-(206, 1003, 'White', 89509, 22035.00, 'DEFAULT DESCRIPTION'),
-(207, 1004, 'White', 78452, 23809.00, 'DEFAULT DESCRIPTION'),
-(208, 1004, 'Red', 47884, 15562.00, 'DEFAULT DESCRIPTION'),
-(209, 1004, 'Green', 119508, 6584.00, 'DEFAULT DESCRIPTION'),
-(210, 1004, 'Silver', 100272, 26743.00, 'DEFAULT DESCRIPTION'),
-(211, 1004, 'Green', 66437, 21878.00, 'DEFAULT DESCRIPTION'),
-(212, 1002, 'Red', 74661, 14412.00, 'DEFAULT DESCRIPTION'),
-(213, 1003, 'Silver', 22742, 18986.00, 'DEFAULT DESCRIPTION'),
-(214, 1001, 'Blue', 79487, 15121.00, 'DEFAULT DESCRIPTION'),
-(215, 1004, 'Blue', 39730, 8192.00, 'DEFAULT DESCRIPTION'),
-(216, 1001, 'Silver', 46119, 11516.00, 'DEFAULT DESCRIPTION'),
-(217, 1003, 'Green', 115914, 7962.00, 'DEFAULT DESCRIPTION'),
-(218, 1003, 'Yellow', 41688, 22414.00, 'DEFAULT DESCRIPTION'),
-(219, 1003, 'Blue', 71815, 21027.00, 'DEFAULT DESCRIPTION'),
-(220, 1002, 'White', 52286, 23901.00, 'DEFAULT DESCRIPTION'),
-(221, 1002, 'Red', 83820, 17408.00, 'DEFAULT DESCRIPTION'),
-(222, 1001, 'Blue', 60013, 19024.00, 'DEFAULT DESCRIPTION'),
-(223, 1002, 'Yellow', 92093, 15832.00, 'DEFAULT DESCRIPTION'),
-(224, 1003, 'Green', 17943, 18511.00, 'DEFAULT DESCRIPTION'),
-(225, 1001, 'Black', 96242, 15776.00, 'DEFAULT DESCRIPTION'),
-(226, 1004, 'Blue', 25913, 11499.00, 'DEFAULT DESCRIPTION'),
-(227, 1004, 'Black', 59357, 16821.00, 'DEFAULT DESCRIPTION'),
-(228, 1004, 'Silver', 46900, 5842.00, 'DEFAULT DESCRIPTION'),
-(229, 1002, 'White', 36771, 16255.00, 'DEFAULT DESCRIPTION'),
-(230, 1004, 'Red', 78629, 23420.00, 'DEFAULT DESCRIPTION'),
-(231, 1004, 'Green', 57889, 9739.00, 'DEFAULT DESCRIPTION'),
-(232, 1001, 'Black', 94571, 3041.00, 'DEFAULT DESCRIPTION'),
-(233, 1002, 'Yellow', 58183, 5289.00, 'DEFAULT DESCRIPTION'),
-(234, 1004, 'Blue', 28407, 10931.00, 'DEFAULT DESCRIPTION'),
-(235, 1002, 'Silver', 63837, 24912.00, 'DEFAULT DESCRIPTION'),
-(236, 1002, 'Yellow', 21989, 12995.00, 'DEFAULT DESCRIPTION'),
-(237, 1003, 'Green', 39306, 14801.00, 'DEFAULT DESCRIPTION'),
-(238, 1003, 'Red', 17398, 11331.00, 'DEFAULT DESCRIPTION'),
-(239, 1002, 'Yellow', 88688, 14940.00, 'DEFAULT DESCRIPTION')
+insert into Car_Stock (ID, CAR_ID, COLOUR, PRICE, MILEAGE, TRANSMISSION, ENGINE_SIZE, FUEL_TYPE,
+                       RELEASE_YEAR, DESCRIPTION) values
+(200, 1003, 'Red', 7499.00, 74346, 'Manual', '1.8L', 'Petrol', 1988, 'Great Condition - Kept in a garage')
 ;
