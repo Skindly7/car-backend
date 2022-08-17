@@ -22,9 +22,9 @@ public class MarketService {
 
     public List<CarStock> getMarketDetailsOfCarByID(int carID) {
 
-//        Optional<Car> car = carRepository.findById(carID);
-//
-//        List<CarStock> cars = marketRepository.findAllByCarId(car);
-        return null;
+        Optional<Car> car = carRepository.findById(carID);
+
+        List<CarStock> cars = marketRepository.findAllByCarId(car);
+        return cars;
     }
 }
