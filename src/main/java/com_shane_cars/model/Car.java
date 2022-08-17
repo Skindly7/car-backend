@@ -1,7 +1,14 @@
 package com_shane_cars.model;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import javax.persistence.*;
 
+@Getter
+@Setter
+@NoArgsConstructor
 @Entity
 public class Car {
 
@@ -35,11 +42,6 @@ public class Car {
 
     private double mpg;
 
-
-    protected Car(){
-        // no args constructor
-    }
-
     public Car(Integer id, String make, String model, String engineSize, String bodyType, String fuelType,
                Integer numberOfDoors, String transmission, int releaseYear, String gen, int topSpeed,
                double zeroToSixty, int horsePower, double mpg) {
@@ -59,115 +61,4 @@ public class Car {
         this.mpg = mpg;
     }
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getMake() {
-        return make;
-    }
-
-    public void setMake(String make) {
-        this.make = make;
-    }
-
-    public String getModel() {
-        return model;
-    }
-
-    public void setModel(String model) {
-        this.model = model;
-    }
-
-    public String getEngineSize() {
-        return engineSize;
-    }
-
-    public void setEngineSize(String engineSize) {
-        this.engineSize = engineSize;
-    }
-
-    public String getBodyType() {
-        return bodyType;
-    }
-
-    public void setBodyType(String bodyType) {
-        this.bodyType = bodyType;
-    }
-
-    public String getFuelType() {
-        return fuelType;
-    }
-
-    public void setFuelType(String fuelType) {
-        this.fuelType = fuelType;
-    }
-
-    public Integer getNumberOfDoors() {
-        return numberOfDoors;
-    }
-
-    public void setNumberOfDoors(Integer numberOfDoors) {
-        this.numberOfDoors = numberOfDoors;
-    }
-
-    public String getTransmission() {
-        return transmission;
-    }
-
-    public void setTransmission(String transmission) {
-        this.transmission = transmission;
-    }
-
-    public int getReleaseYear() {
-        return releaseYear;
-    }
-
-    public void setReleaseYear(int year) {
-        this.releaseYear = year;
-    }
-
-    public String getGen() {
-        return gen;
-    }
-
-    public void setGen(String gen) {
-        this.gen = gen;
-    }
-
-    public int getTopSpeed() {
-        return topSpeed;
-    }
-
-    public void setTopSpeed(int topSpeed) {
-        this.topSpeed = topSpeed;
-    }
-
-    public double getZeroToSixty() {
-        return zeroToSixty;
-    }
-
-    public void setZeroToSixty(double zeroToSixty) {
-        this.zeroToSixty = zeroToSixty;
-    }
-
-    public int getHorsePower() {
-        return horsePower;
-    }
-
-    public void setHorsePower(int horsePower) {
-        this.horsePower = horsePower;
-    }
-
-    public double getMpg() {
-        return mpg;
-    }
-
-    public void setMpg(double mpg) {
-        this.mpg = mpg;
-    }
 }

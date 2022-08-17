@@ -1,7 +1,14 @@
 package com_shane_cars.model;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import javax.persistence.*;
 
+@Getter
+@Setter
+@NoArgsConstructor
 @Entity
 public class CarStock {
 
@@ -21,10 +28,6 @@ public class CarStock {
     @JoinColumn(name="CAR_ID", referencedColumnName="id", nullable = true)
     private Car carId;
 
-
-    protected CarStock(){
-        // no args constructor
-    }
 
     public CarStock(Integer id, double price, String colour, int mileage, String description, Car carId) {
         this.id = id;
